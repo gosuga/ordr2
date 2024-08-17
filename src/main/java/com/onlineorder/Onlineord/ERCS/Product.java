@@ -1,8 +1,5 @@
 package com.onlineorder.Onlineord.ERCS;
 
-
-
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,7 +14,7 @@ public class Product {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-	 @NotBlank(message = "Name cannot be blank")
+	    @NotBlank(message = "must jave name")
     private String name;
 	 
 	 @Min  (value = 1,message = "Must be +ive") 
